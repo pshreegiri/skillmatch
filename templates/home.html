@@ -55,6 +55,38 @@
         </ul>
     </div>
     {% endif %}
+
+    {% if section_scores %}
+    <div class="section-analysis-box">
+        <h3>Section-wise ATS Breakdown</h3>
+
+        {% for section, score in section_scores.items() %}
+        <div class="score-row">
+            <span>{{ section }}</span>
+            <span>
+                {% if score == "N/A" %}
+                    {{ score }}
+                {% else %}
+                    {{ score }}%
+                {% endif %}
+            </span>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if tips %}
+    <div class="tips-box">
+        <h3>Resume Improvement Roadmap</h3>
+
+        {% for tip in tips %}
+        <div class="tip-card priority-{{ tip.priority.lower() }}">
+            <strong>{{ tip.priority }} Priority:</strong>
+            {{ tip.message }}
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
 </div>
 
 <script>

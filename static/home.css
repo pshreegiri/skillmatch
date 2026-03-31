@@ -1,3 +1,4 @@
+
 /* ===================================================
    GLOBAL RESET
 =================================================== */
@@ -195,7 +196,7 @@ input[type="submit"]:hover {
 .progress-ring__circle {
     stroke-linecap: round;
     transition: stroke-dashoffset 0.6s ease;
-   }
+}
 
 .score-text {
     position: absolute;
@@ -204,7 +205,7 @@ input[type="submit"]:hover {
     transform: translate(-50%, -50%);
     font-weight: 700;
     font-size: 14px;
-     }
+}
 
 /* ===================================================
    RECOMMENDATION
@@ -245,4 +246,204 @@ input[type="submit"]:hover {
 
 .missing li {
     margin-bottom: 6px;
+}
+
+/* ===================================================
+   SECTION-WISE ATS BREAKDOWN
+=================================================== */
+
+.section-analysis-box {
+    margin-top: 30px;
+    padding: 18px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.05);
+}
+
+.section-analysis-box h3 {
+    margin-bottom: 15px;
+    color: #818cf8;
+}
+
+.score-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-size: 14px;
+}
+
+.score-row:last-child {
+    border-bottom: none;
+}
+
+/* ===================================================
+   RESUME IMPROVEMENT ROADMAP
+=================================================== */
+
+.tips-box {
+    margin-top: 25px;
+    padding: 18px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.05);
+}
+
+.tips-box h3 {
+    margin-bottom: 15px;
+    color: #22c55e;
+}
+
+.tip-card {
+    margin-bottom: 12px;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.priority-high {
+    background: rgba(239,68,68,0.12);
+    border-left: 4px solid #ef4444;
+}
+
+.priority-medium {
+    background: rgba(250,204,21,0.12);
+    border-left: 4px solid #facc15;
+}
+
+.priority-low {
+    background: rgba(59,130,246,0.12);
+    border-left: 4px solid #3b82f6;
+}
+/* ===================================================
+   RANKING TABLE
+=================================================== */
+
+.ranking-container {
+    width: 85%;
+    max-width: 1100px;
+}
+
+.table-wrapper {
+    margin-top: 30px;
+    overflow-x: auto;
+}
+
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.04);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.ranking-table th,
+.ranking-table td {
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.ranking-table th {
+    background: rgba(99,102,241,0.15);
+    color: #c4b5fd;
+    font-weight: 700;
+}
+
+.ranking-table tr:hover {
+    background: rgba(255,255,255,0.03);
+}
+
+.top-rank {
+    background: rgba(34,197,94,0.08);
+}
+
+.score-badge {
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.score-badge.high {
+    background: rgba(34,197,94,0.15);
+    color: #22c55e;
+}
+
+.score-badge.medium {
+    background: rgba(250,204,21,0.15);
+    color: #facc15;
+}
+
+.score-badge.low {
+    background: rgba(239,68,68,0.15);
+    color: #ef4444;
+}
+
+/* ===================================================
+   INSIGHT BOXES
+=================================================== */
+
+.insight-box {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.05);
+}
+
+.insight-box h3 {
+    margin-bottom: 16px;
+    color: #818cf8;
+}
+
+.insight-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-size: 14px;
+}
+
+.insight-row:last-child {
+    border-bottom: none;
+}
+
+/* ===================================================
+   READINESS CARDS
+=================================================== */
+
+.readiness-card {
+    margin-bottom: 12px;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.high-ready {
+    background: rgba(34,197,94,0.12);
+    border-left: 4px solid #22c55e;
+}
+
+.moderate-ready {
+    background: rgba(250,204,21,0.12);
+    border-left: 4px solid #facc15;
+}
+
+.low-ready {
+    background: rgba(239,68,68,0.12);
+    border-left: 4px solid #ef4444;
+}
+
+/* ===================================================
+   TRAINING TOPICS
+=================================================== */
+
+.training-topic {
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 12px;
+    background: rgba(99,102,241,0.12);
+    border-left: 4px solid #818cf8;
+    font-size: 14px;
 }
