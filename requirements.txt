@@ -1,0 +1,10 @@
+flask
+gunicorn
+PyPDF2
+sentence-transformers
+scikit-learn
+spacy
+torch
+transformers
+numpy
+scipy
